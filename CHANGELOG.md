@@ -14,6 +14,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - vue.config.js
 - Gemfile
 - Gemfile.lock
+- Pug
+- Tachyons
 
 ### Changed
 - README.md updated for local development, running tests, and CI setup
