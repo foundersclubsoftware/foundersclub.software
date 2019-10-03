@@ -2,23 +2,23 @@
   div(id="Home")
     .flex.flex-column.tc.white.main-bg.items-center
       .f1.mt6.fw5 Get to Market
-      .f3.mt4.mb6.w-40 No matter where you are in the process, we can help you and your app idea.
-    .tl
-      .center.w-60.mt5
+      .f3.mt4.mb6.w-40-ns.w-100 No matter where you are in the process, we can help you and your app idea.
+    div(id="main").tl
+      .center.w-60-ns.w-100.mt5
         .flex.flex-column.center.w-90
           p.mt5 Have an app idea? Not sure where to start?
           p.mb5 The Founders Club Software Team is a team of software developers here to get your idea off 
             | the ground. Our team is available exclusively for current members of the University of
             | Iowa Founders Club. All of our services are free of charge although you may be required
             | to pay for maintenance fees such sa hosting, databases, etc.
-        h2 Our expertise:
+        h2.tl-ns.tc Our expertise:
         .flex.flex-column.center.w-90.ma0.mb
           p.ma0.pa0 - Android app development
           p.ma0.pa0 - iOS (iPhone, iPad, Apple Watch/TV) development
           p.ma0.pa0 - Web app development
           p.mt0.mb5.pa0 - Bots, personal assistant, and more. If it's software, we can build it.
-        h2(id="Services") Our services:
-        h3.tc.w-50.center.mt5 Services we provide to all members, no matter the level:
+        h2(id="Services").tl-ns.tc Our services:
+        h3.tc.w-50-ns.w-90.w-100-m.center.mt5 Services we provide to all members, no matter the level:
         .flex.flex-column.center.w-90.ma0
           p - Technical consulting. What business model would work well for my business? What 
             | is the difference between Android, iOS, or web? How do I make money with my product? If
@@ -32,14 +32,14 @@
           p.mb4 - Help with your pitch to explain your tech. Overcomplicating your business solution
             | is very easy to do, but is not recommended in a pitch. We can help you explain your 
             | technology to the public like they are 5.
-        h3.tc.w-60.center.mt5 Services we provide to Members and Elite Members level of the Founders Club:
+        h3.tc.w-60-ns.w-90.w-100-m.center.mt5 Services we provide to Members and Elite Members level of the Founders Club:
         .flex.flex-column.center.w-90.ma0.mb5
           p - MVP software development. We can design and build you your first solution to go to market 
             | with. Have something to sell to your customers in weeks, not months.
           p - Full service custom software development. Once you have a solution worth investing time, 
             | energy and money into, we can design and develop an app for you from scratch that is made
             | to scale.
-        h2 Services we do 
+        h2.tl-ns.tc Services we do 
           i not 
           | provide:
         .flex.flex-column.center.w-90.ma0.mb
@@ -55,20 +55,14 @@
           p - We do not build marketing websites. The Founders Club Marketing Agency is much better 
             | at building websites, e-commerse stores then we are. If you’re not sure if your project is a 
             | web application or a marketing style website, contact us and ask!
-        .flex.flex-column.center.router.items-center
+        .flex.flex-column.center.router-ns.items-center.f3.fw5.tc
           router-link(to="../Process").mt5 Learn more about our process
           router-link(to="../Contact").mb6.mt4 Contact us
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
-import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
+import { Vue } from "vue-property-decorator";
 
-@Component({
-  components: {
-    HelloWorld
-  }
-})
 export default class Home extends Vue {}
 </script>
 
